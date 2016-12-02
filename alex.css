@@ -1,0 +1,201 @@
+ html, body{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+#TopBar_Image{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.TopBar_Image{
+	display: block;
+	width: 100%;
+	border: none;
+	position: relative;
+	padding: none;
+	z-index: -1
+}
+
+#Lab-logo{
+	display: block;
+	width: 100px;
+	height: 150px;
+	float: left;
+	position: absolute;
+	top: -30px;
+	left: 20px;	
+	transition-duration: 0.2s;
+}
+
+#Lab-logo:hover{
+	top: 0;
+	transition-duration: 1.0s;
+}
+
+ul.NavBar{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #d50000;
+}
+
+ul.NavBar li{
+	float: left;
+}
+
+ul.NavBar li a{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 14px;
+	transition: 0.s5s;
+    opacity: 1;
+	line-height: 2;
+}
+
+ul.NavBar li a:hover{
+	background-color: #9B301C;
+}
+
+ul.NavBar li.icon{
+	display: none;
+}
+
+/*Although responsive the dropdown list does not happen at 680px need to work on this*/
+
+@media screen and (max-width:680px){
+	ul.NavBar li:not(:first-child) {display: none;}
+	ul.NavBar li.icon {
+		float: right;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width:680px) {
+	ul.NavBar.responsive {position: relative;}
+	ul.NavBar.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+    ul.NavBar.responsive li {
+		float: none;
+		display: inline;
+	}	
+    
+	ul.NavBar.responsive li a {
+		display: block;
+		text-align: left;
+	}
+}
+
+/* Above comments need to be worked on */
+
+ul.NavBar li a i.Home-icon{
+	font-size:20px;
+}
+
+.Lab-text-field {
+	font-family: sans-serif;
+	line-height: 25px;
+	background-color: #d50000;
+	color: white;
+	margin: 5px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 0 10px 0 10px;
+	border: 1px solid black;
+    font-size: 16px;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.Lab-text-fieldL{
+    font-family: sans-serif;
+    line-height: 25px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: #F7F5CE;
+    margin-top: 20px;
+    padding: 0 10px 0 10px;
+    overflow: hidden;
+    width: 47.5%;
+    float: left;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.Lab-text-fieldR{
+    font-family: sans-serif;
+    line-height: 25px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: #F7F5CE;
+    margin-top: 20px;
+    padding: 0 10px 0 10px;
+    overflow: hidden;
+    width: 47.5%;
+    float: right;
+    box-shadow: 0 5px 5px 5px grey;
+    
+}
+
+.Lab-text-field2 h2{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.Lab-tableL{ 
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    background-color: blanchedalmond;
+    padding: 1rem;
+}
+
+.Lab-tableR{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #42f4c8;
+    width: 50%;
+    padding: 1rem;
+}
+
+.Lab-container{
+    display: table;
+    height: 100%;
+    width: 100%
+}
+
+#Lab-Contact{
+    margin: 20px 8px;
+}
+
+
+#Lab-contact{
+    font-size: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: (1px 1px 0 rgba(white, 1));
+    color: #a8a8a8;
+}
+
+@media screen and (max-width:850px){
+	#Lab-logo{display: none;}
+}

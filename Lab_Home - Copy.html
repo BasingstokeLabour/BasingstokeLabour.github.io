@@ -1,0 +1,124 @@
+<!Doctype html>
+<html lang="en-GB">
+	
+	<head>
+		
+		<title>Basingstoke | Labour Party</title>
+		<meta name="viewport" content="width=device-width, intial-scale=1">
+		
+		<!--Custom CSS Sheet-->
+		<link rel="stylesheet" type="text/css" href="CSS/alex.css">
+		
+		<!--Bootstrap CSS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	</head>
+	
+	<body>
+		
+		<!--This area had some issues before adding browser cleared css.-->
+		        
+		<div id="TopBar_Image">
+			<img src="Images/Banner_Lab2.png" class="TopBar_Image" alt="Our People">
+			<a href="Lab_Home.html"><img src="Images/Labour-Party-logo.png" alt="Labour Logo" id="Lab-logo"></a>
+			
+        
+		</div>
+			
+		<!--Positioned just below the picture responsive to an extent-->
+
+		<div>	
+			<ul class="NavBar" id="myTopnav">
+				
+				<li><a href="/Lab_Home.html"><i class="fa fa-home Home-icon"></i></a></li>
+				<li><a href="/Lab_About_Us.html">About Us</a></li>
+				<li><a href="/Lab_News.html">News</a></li>
+				<li><a href="/Lab_Contact_Us.html">Contact Us</a></li>
+				<li><a href="/Lab_Get_Involved.html">Get involved</a></li>
+				<li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+				
+			</ul>
+
+		</div>
+		
+		<div class="Lab-text-field">
+			
+			<h2>Welcome to Basingstoke Labour</h2>
+			
+			<p>The unofficial website of the Labour Party in Basingstoke. Here you will find information about local campaigns run by our local councillors on behalf of the local people.  If you would like to get involved with the party in any way, delivering flyers, talking to other local people about issue that affect our town or apply to join as a Labour candidate, then please do not hesitate to get in touch through the contact us link above.</p>
+							
+		</div>
+        
+        <div class="Lab-text-fieldL">
+        
+            <h2>WHO WE SERVE</h2>
+        
+            <p>The interactive map below shows the current ward boundaries for the Basingstoke are.  Individual Ward Councillors are listed below this map. For more information about your local Councillors please hover over the listed information where additional details can be found.</p>
+            
+        	<p>Thank you.</p>
+            
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key= AIzaSyAAhLvipVz43ABS2xsajdW9ziUBz8r8_m8 '></script>
+			
+		<div style='overflow:hidden;height:400px;width:800px;'>
+			
+		<div id='gmap_canvas' style='height:400px;width:800px;'>
+				
+		</div>
+			
+			<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+			
+		</div> 
+			
+			<a href='https://add-map.com/'>add-map</a>
+			
+			<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=5ec4afa01d33e4bd5766557b5aa9c96649b9fc49'></script>
+			
+			<script type='text/javascript'>
+				
+				function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(51.26449919825061,-1.0965591883910975),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.26449919825061,-1.0965591883910975)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br><br> Basingstoke<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+			
+			</script>
+                    
+        </div>
+             
+        <div class="Lab-text-fieldR">
+        
+            <h2>TEST</h2>
+        
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in venenatis nibh, varius pulvinar enim. Sed nulla eros, venenatis et lorem sed, lacinia vestibulum lacus. Pellentesque venenatis fermentum rhoncus. Nunc tristique, ipsum eu tempor dignissim, lectus tellus ultricies sapien, quis feugiat odio velit at ante. Curabitur sed purus eget ante gravida posuere. Donec sed neque in diam accumsan tincidunt. Morbi cursus lectus et nisl accumsan lobortis. Aenean molestie nibh turpis, in interdum felis venenatis a. Proin ullamcorper, augue condimentum eleifend pharetra, dui nulla cursus leo, in ultricies tellus orci ut nulla. Nam varius tortor nisi, a sollicitudin orci tincidunt a. Nullam congue est metus, vitae dignissim ante laoreet interdum. Phasellus ipsum quam, laoreet at orci eu, sagittis dapibus urna. Vivamus ut metus at turpis tristique placerat vel ut elit. </p> 
+        
+        
+        </div>     
+        
+        
+			
+<!--------------------------------------------------------------------------------------------------------------->
+			
+<!--Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon-->
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "NavBar") {
+					x.className += " responsive";
+				} else {
+					x.className = "NavBar";
+				}
+			}
+		</script>
+		
+<!--------------------------------------------------------------------------------------------------------------->
+	
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
